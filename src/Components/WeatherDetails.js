@@ -1,11 +1,11 @@
 import { useState ,useEffect} from 'react'
 import "./WeatherDetails.css";
 import search from "../Images/search-icon-png-9969.png";
-import snowIcon from "../Images/snowIcon.webp";
+// import snowIcon from "../Images/snowIcon.webp";
 import cloudicon from "../Images/cloudsIcon.png"
 import drizzle from "../Images/drizzle.webp";
 import rain from "../Images/rain.png";
- import winde from "../Images/wind.webp";
+import winde from "../Images/wind.webp";
 import humiditi from "../Images/humidity.png";
 import sunlight from "../Images/sunLight.webp";
 
@@ -99,10 +99,13 @@ setCitynotfound(false);
         if(e.key==="Enter")
         {searched();}
     }
- useEffect(function ()
- {
-    searched();
- },[])
+ // useEffect(function ()
+ // {
+ //    searched();
+ // },[])
+     useEffect(() => {
+        searched();
+    }, [searched]);
     return (
         <>
             <div className="container">
