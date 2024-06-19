@@ -11,8 +11,9 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "devDependencies":{
-    "@babel/plugin-proposal-private-property-in-object"
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "babel-eslint": "^10.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
